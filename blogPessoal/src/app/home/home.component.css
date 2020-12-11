@@ -1,0 +1,8 @@
+.parallax{
+  background-image: url('https://www.uppsala.se/globalassets/bildspel/kultur-och-fritid/friluftsomraden/stadsskogens-naturreservat/stadsskogens-naturreservat_01.jpg?width=900&quality=80');
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
