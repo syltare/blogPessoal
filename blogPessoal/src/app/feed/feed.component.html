@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <app-perfil-lateral></app-perfil-lateral>
+    </div>
+    <div class="col-md-8">
+      <h3 class="text-center mb-4 text-monospace">Como tem sido minha experiência na Generation?
+      </h3>
+      <div class="form-group">
+        <label class="text-monospace" for="titulo">Título:</label>
+        <input class="form-control" type="text" id="titulo" placeholder="Digite aqui seu título">
+      </div>
+      <div class="form-group">
+        <label class="text-monospace" for="titulo">Texto:</label>
+        <textarea class="form-control" id="text" rows="3" placeholder="Digite aqui o seu texto">
+        </textarea>
+      </div>
+      <div class="row d-flex align-items-end">
+        <div class="col-md-6">
+          <div class="form-group m-0">
+            <label class="text-monospace" for="tema">Escolha um tema ou <a
+                href="">cadastrar um novo</a></label>
+            <select id="tema" class="form-control" name="tema">
+              <option value="">Teste 123</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <button class="btn btn-outline-info w-25">Publicar</button>
+        </div>
+      </div>
+      <hr class="mt-5 md-5">
+      <nav class="d-flex justify-content-center">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a id="nav-home-tab" class="nav-item nav-link active text-secondary font-weight-bold"
+              data-toggle="tab" href="#minhas-postagens" role="tab" aria-controls="nav-home"
+              aria-selected="true">Minhas Postagens </a>
+          <a id="nav-profile-tab" class="nav-item nav-link text-secondary font-weight-bold"
+              href="#postagens-temas" data-toggle="tab" role="tab" aria-controls="nav-profile"
+              aria-selected="false" (click)='limpaListaTema()'>Postagens por tema</a>
+        </div>
+      </nav>
+      <div id="nav-tabContent" class="tab-content">
+        <div id="minhas-postagens" class="tab-pane fade show active" role="tabpanel"
+            arial-labelledby="nav-postagens-tab">
+          <div class="row mt-3 mb-3">
+            <div class="col-md-10 pr-0">
+                <input class="form-control w-100" type="search" placeholder="Pesquisar postagem"
+                arial-label="Pesquisar">
+            </div>
+            <div class="col-md-2 pl-0">
+              <button class="btn btn-outline-warning w-100" type="button">Pesquisar</button>
+            </div>
+          </div>
+        </div><!-- #minhas-postagens -->
+        <div id="postagens-tema" class="tab-pane fade" role=!tabpanel
+             arial-labelledby="nav-presenca-tab">
+          <div class="row mt-3 mb-3">
+            <div class="col-md-10 pr-0">
+                <input class="form-control w-100" type="search" placeholder="Pesquisar postagem"
+                arial-label="Pesquisar">
+            </div>
+            <div class="col-md-2 pl-0">
+              <button class="btn btn-outline-warning w-100" type="button">Pesquisar</button>
+            </div>
+          </div>
+        </div><!-- #postagens-tema -->
+      </div><!-- #nav-tabContent -->
+
+    </div>
+  </div>
+</div>
